@@ -19,9 +19,9 @@ Import to Eclipse and DO necessary plugin installation on Eclipse:
 
 How to Run script:
 1) Open Command Prompt. In CMD, navigate to folder location where you stored selenium standalone driver (like "C:\>cd Grid")
-2) Then enter this command , to start selenium standalone server - java -jar selenium-server-standalone-3.5.0.jar -role hub
+2) Then enter this command , to start selenium standalone server ==> java -jar selenium-server-standalone-3.5.0.jar -role hub
 3) Open second Command Prompt. In CMD, navigate to folder location where you stored chromdriver (like "C:\>cd Grid")
-4) Then enter this command , to start chromdriver - java -Dwebdriver.chrome.driver=C:/Grid/chromedriver.exe -jar selenium-server-standalone-3.5.0.jar -port 5555 -role node -hub http://localhost:4444/grid/register -browser "browserName=chrome, version=ANY, maxInstances=10, platform=WINDOWS"
+4) Then enter this command , to start chromdriver ==> java -Dwebdriver.chrome.driver=C:/Grid/chromedriver.exe -jar selenium-server-standalone-3.5.0.jar -port 5555 -role node -hub http://localhost:4444/grid/register -browser "browserName=chrome, version=ANY, maxInstances=10, platform=WINDOWS"
 5) Right click on the TestNG.xml>Run as>TestNG Suite (you can find this file under "src/test/resources") and click 
 6) Now two scenarios will get executed
 7) You can see log message in Console
